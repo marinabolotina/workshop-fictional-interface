@@ -1,0 +1,114 @@
+/* welcome to the style file of this project! */
+
+* {
+    transition: all ease .2s ;
+    position: absolute;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(45,245,253,1) 15%, rgba(195,34,177,0.17372881355932202) 100%); 
+}
+
+.machine{
+    height: 500px;
+    width: 400px;
+    left: 600px;
+    top: 200px;
+    background-color:lavenderblush;
+    border: 3px solid rgba(255,110,209,0.65);
+    box-shadow: 5px 5px 15px 5px rgba(255,110,209,0.65);
+}
+
+.door{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 700px;
+    top: 400px;
+    background-color: cyan;
+    border: 3px solid rgba(255,110,209,0.65);
+    box-shadow: 5px 5px 15px 5px rgba(255,110,209,0.65);
+}
+
+.door-2{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    left: 700px;
+    top: 400px;
+    background-color: lightcyan;
+    filter: blur(20px);
+    opacity: 0.8;
+    animation: blur 1s infinite alternate;
+}
+
+.panel{
+    height: 100px;
+    width: 400px;
+    left: 600px;
+    top: 200px;
+    background-color: lavender;
+    border: 3px solid rgba(255,110,209,0.65);
+}
+
+.tumbler{
+    height: 70px;
+    width: 70px;
+    left: 620px;
+    top: 210px;
+    border-radius: 50%;
+    background-color: lightcyan;
+    border: 3px solid rgba(255,110,209,0.65);
+    box-shadow: 5px 5px 15px 5px rgba(255,110,209,0.65);
+}
+
+.display{
+    height: 60px;
+    width: 180px;
+    left: 800px;
+    top: 220px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.6398305084745763) 15%, rgba(0,0,0,1) 100%);
+    filter: blur(3px);
+}
+
+.display-2{
+    height: 60px;
+    width: 180px;
+    left: 800px;
+    top: 220px;
+    background: black;
+    filter: blur(3px);
+    opacity: 0.5;
+    animation: move 1s infinite alternate;
+}
+
+.display:hover{
+    transform: rotate(180deg);
+}
+
+.tumbler:hover{
+    transform: scale(0.5);
+    }
+
+.machine:hover{
+    transform: skew(45deg);
+}
+
+@keyframes move {
+    from {
+    left: 0px;
+    } to {
+    left: 1000px;
+    }
+}
+
+@keyframes blur {
+
+    from {
+        filter: blur(20px);
+    }to{
+        filter: blur(50px);
+    }
+}
